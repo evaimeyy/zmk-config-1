@@ -54,7 +54,7 @@
             &kp C_MENU    &none   &kp C_AL_WWW   &kp C_AL_EMAIL   &none  &kp C_AL_TEXT_EDITOR   &kp C_GREEN_BUTTON  &none    &none    &kp C_AL_LOGOFF  &kp C_AL_CONTROL_PANEL   &kp C_AC_CANCEL
             &none   &none   &kp C_SLEEP   &none   &kp C_AL_FILE_BROWSER    &none   &none  &none    &none    &kp K_LOCK  &none
             &none   &none    &none  &kp C_AL_CALENDAR   &none   &none    &kp C_RED_BUTTON  &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_STOP
-            &kp C_BRI_AUTO  &kp C_BRI_UP  &kp C_BRI_UP    &none      &none    &none   &kp C_SNAPSHOT   &none
+            &kp C_BRI_AUTO  &kp C_BRI_UP  &kp C_BRI_DN    &none      &none    &none   &kp C_SNAPSHOT   &none
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
