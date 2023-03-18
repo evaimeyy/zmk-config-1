@@ -41,8 +41,8 @@
 	raise_layer {
           bindings = <
             &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9 &kp N0  &kp BSPC
-            &kp CAPS    &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp INS
-            &kp LSHFT          &none  &none  &none  &none &none  &none  &none  &none  &kp UP  &kp RSHFT
+            &kp CAPS    &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &none  &none  &none  &kp LBKT  &kp RBKT  &kp BSLH  &kp INS
+            &kp LSHFT          &none  &none  &none  &none &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT  &kp UP  &kp RSHFT
             &to DEF   &kp LALT   &kp LGUI  &kp SPACE  &kp SPACE  &kp LEFT  &kp DOWN  &kp RIGHT
 			>;
           sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -51,10 +51,10 @@
 	
         lower_layer {
           bindings = <
-            &none  &none  &none  &none  &none  &none   &none  &none    &none    &kp LBKT  &kp RBKT     &kp BSLH
-            &none   &none    &none  &none   &none   &none   &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
-            &kp LSHFT   &none    &none  &none   &none   &none    &none  &none  &none  &none     &kp RSHFT
-            &none   &none   &none       &kp SPACE           &kp SPACE                   &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP
+            &kp C_MENU    &none   &kp C_AL_WWW   &kp C_AL_EMAIL   &none  &kp C_AL_TEXT_EDITOR   &kp C_GREEN_BUTTON  &none    &none    &kp C_AL_LOGOFF  &kp C_AL_CONTROL_PANEL   &kp C_AC_CANCEL
+            &none   &none   &kp C_SLEEP   &none   &kp C_AL_FILE_BROWSER    &none   &none  &none    &none    &kp K_LOCK  &none
+            &none   &none    &none  &kp C_AL_CALENDAR   &none   &none    &kp C_RED_BUTTON  &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_STOP
+            &kp C_BRI_AUTO  &kp C_BRI_UP  &kp C_BRI_UP    &none      &none    &none   &kp C_SNAPSHOT   &none
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
@@ -76,7 +76,7 @@
             &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
             &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &none  &none  &none  &reset
             &none &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &none  &none  &none   &none  &none  &none  &bootloader
-            &none  &to GAM  &to RSE  &lt LWR SPACE  &lt ADJ SPACE  &lt RSE RGUI   &lt GAM RCTRL  &none
+            &none  &to GAM  &to RSE  &lt GAM SPACE  &lt LWR SPACE  &kp RGUI   &kp RCTRL  &none
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
