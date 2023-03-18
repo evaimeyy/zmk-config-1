@@ -54,7 +54,7 @@
             &kp C_MENU    &none   &kp C_AL_WWW   &kp C_AL_EMAIL   &none  &kp C_AL_TEXT_EDITOR   &kp C_GREEN_BUTTON  &none    &none    &kp C_AL_LOGOFF  &kp C_AL_CONTROL_PANEL   &kp C_AC_CANCEL
             &none   &none   &kp C_SLEEP   &none   &kp C_AL_FILE_BROWSER    &none   &none  &none    &none    &kp K_LOCK  &none
             &none   &none    &none  &kp C_AL_CALENDAR   &none   &none    &kp C_RED_BUTTON  &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_STOP
-            &kp C_BRI_AUTO  &kp C_BRI_UP  &kp C_BRI_DN    &none      &none    &none   &kp C_SNAPSHOT   &none
+            &to DEF  &kp C_BRI_UP  &kp C_BRI_DN &kp C_BRI_AUTO      &none    &none   &kp C_SNAPSHOT   &none
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
@@ -62,10 +62,10 @@
 	
 	adjust_layer {
           bindings = <
-            &ext_power EXT_POWER_TOGGLE_CMD  &none  &none  &none  &none  &none   &none  &kp N7 &kp N8 &kp N9 &none &kp BSPC
+            &ext_power EXT_POWER_TOGGLE_CMD  &rgb_ug RGB_TOG  &none  &none  &none  &none   &none  &kp N7 &kp N8 &kp N9 &none &kp BSPC
             &none  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF   &none  &kp N4  &kp N5  &kp N6  &none
             &none  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR   &none  &kp N1  &kp N2  &kp N3  &none
-            &rgb_ug RGB_TOG  &none  &none  &none  &none  &none  &none   &none  
+            &to DEF  &none  &none  &none  &none  &none  &none   &none  
 			       >;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
@@ -76,7 +76,7 @@
             &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
             &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &none  &none  &none  &reset
             &none &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &none  &none  &none   &none  &none  &none  &bootloader
-            &none  &to GAM  &to RSE &none &none  &none &none  &none
+            &none  &to GAM &to LWR &to RSE &to ADJ  &none &none  &none
 		>;
           sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
